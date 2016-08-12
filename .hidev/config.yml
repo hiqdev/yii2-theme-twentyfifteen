@@ -1,0 +1,10 @@
+package:
+    type:           yii2-extension
+    name:           yii2-theme-twentyfifteen
+    title:          TwentyFifteen Theme for hiqdev/yii2-thememanager
+    headline:       Yii2 TwentyFifteen Theme
+    keywords:       twentyfifteen, theme, extension, yii2
+    namespace:      hiqdev\themes\twentyfifteen
+    description:    |
+        This package provides [TwentyFifteen theme](https://shapebootstrap.net/item/1524965-flat-theme-free-responsive-multipurpose-site-template/comments)
+        for [Yii2 framework](http://yiiframework.com).
