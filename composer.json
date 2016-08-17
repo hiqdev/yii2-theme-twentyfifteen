@@ -52,8 +52,12 @@
     },
     "autoload": {
         "psr-4": {
-            "hiqdev\\themes\\twentyfifteen\\": "src",
-            "hiqdev\\hiqdevcom\\": "src"
+            "hiqdev\\themes\\twentyfifteen\\": "src"
+        }
+    },
+    "extra": {
+        "config-plugin": {
+            "hisite": "src/config/hisite.php"
         }
     },
     "repositories": [
