@@ -7,9 +7,9 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use hiqdev\themes\original\Asset;
 
-Asset::register($this);
+Yii::$app->get('themeManager')->registerAssets();
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
