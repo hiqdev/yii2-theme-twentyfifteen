@@ -66,7 +66,10 @@ Yii::$app->get('themeManager')->registerAssets();
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">
+            &copy; <?= Yii::$app->themeManager->widget('CopyrightYears') ?> <?= Yii::$app->themeManager->widget('OrganizationLink') ?>
+            <?= Yii::t('hiqdev/themes/agency', 'All rights reserved.') ?>
+        </p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
