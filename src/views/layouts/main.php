@@ -50,7 +50,7 @@ Yii::$app->get('themeManager')->registerAssets();
                 )
                 . Html::endForm()
                 . '</li>'
-            )
+            ),
         ],
     ]);
     NavBar::end();
@@ -68,7 +68,7 @@ Yii::$app->get('themeManager')->registerAssets();
     <div class="container">
         <p class="pull-left">
             &copy; <?= Yii::$app->themeManager->widget('CopyrightYears') ?> <?= Yii::$app->themeManager->widget('OrganizationLink') ?>
-            <?= Yii::t('hiqdev/themes/agency', 'All rights reserved.') ?>
+            <?= Yii::t('hiqdev/themes/twentyfifteen', 'All rights reserved.') ?>
         </p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>

@@ -26,7 +26,11 @@ composer.lock
 coverage.clover
 
 # PHARs
+chkipper.phar
 composer.phar
+php-cs-fixer.phar
+phpunit-skelgen.phar
+phpunit.phar
 
 # WordPress files
 wp-content

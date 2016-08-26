@@ -10,7 +10,7 @@ Yii2 TwentyFifteen Theme
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/yii2-theme-twentyfifteen.svg)](https://scrutinizer-ci.com/g/hiqdev/yii2-theme-twentyfifteen/)
 [![Dependency Status](https://www.versioneye.com/php/hiqdev:yii2-theme-twentyfifteen/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:yii2-theme-twentyfifteen/dev-master)
 
-This package provides [TwentyFifteen theme](https://shapebootstrap.net/item/1524965-flat-theme-free-responsive-multipurpose-site-template/comments)
+This package provides [TwentyFifteen theme](https://wordpress.org/themes/twentyfifteen/)
 for [Yii2 framework](http://yiiframework.com).
 
 ## Installation
@@ -36,4 +36,4 @@ to the require section of your composer.json.
 This project is released under the terms of the BSD-3-Clause [license](LICENSE).
 Read more [here](http://choosealicense.com/licenses/bsd-3-clause).
 
-Copyright © 2014-2016, HiQDev (http://hiqdev.com/)
+Copyright © 2016, HiQDev (http://hiqdev.com/)
