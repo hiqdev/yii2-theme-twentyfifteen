@@ -4,9 +4,7 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
+use yii\widgets\Menu;
 
 Yii::$app->get('themeManager')->registerAssets();
 
@@ -24,57 +22,52 @@ Yii::$app->get('themeManager')->registerAssets();
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => 'My Company',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post', ['class' => 'navbar-form'])
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link']
-                )
-                . Html::endForm()
-                . '</li>'
-            ),
-        ],
-    ]);
-    NavBar::end();
-    ?>
+<div id="page" class="hfeed site">
+    <a class="skip-link screen-reader-text"
+       href="#content"><?php Yii::t('hiqdev:themes:twentyfifteen', 'Skip to content') ?></a>
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
+    <div id="sidebar" class="sidebar">
+        <header id="masthead" class="site-header" role="banner">
+            <div class="site-branding">
+                <h1 class="site-title">
+                    <?= Html::a(Yii::$app->name, '/', ['rel' => 'home']) ?>
+                </h1>
+                <p class="site-description">
+                    <?= isset(Yii::$app->params['site.description']) ? Yii::$app->params['site.description'] : '' ?>
+                </p>
+                <button class="secondary-toggle">
+                    <?= Yii::t('hiqdev:themes:twentyfifteen', 'Menu and widgets') ?>
+                </button>
+            </div>
+        </header>
+
+        <div id="secondary" class="secondary">
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <?= Yii::$app->get('menuManager')->render('main', [
+                    'class' => Menu::class,
+                    'options' => ['class' => 'nav_menu'],
+                ]) ?>
+            </nav>
+        </div>
     </div>
-</div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">
+    <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">
+                <?= $content ?>
+            </main>
+        </div>
+    </div>
+
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="site-info text-center">
             &copy; <?= Yii::$app->themeManager->widget('CopyrightYears') ?> <?= Yii::$app->themeManager->widget('OrganizationLink') ?>
-            <?= Yii::t('hiqdev/themes/twentyfifteen', 'All rights reserved.') ?>
-        </p>
+            <br>
+            <?= Yii::t('hiqdev:thememanager', 'All rights reserved.') ?>
+        </div>
+    </footer>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
-
+</div>
 <?php $this->endBody() ?>
 </body>
 </html>
