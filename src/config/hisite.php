@@ -21,12 +21,9 @@ return [
         ],
         'i18n' => [
             'translations' => [
-                'hiqdev/themes/twentyfifteen' => [
+                'hiqdev:themes:twentyfifteen' => [
                     'class' => \yii\i18n\PhpMessageSource::class,
-                    'basePath' => '@hiqdev/themes/twentyfifteen/messages',
-                    'fileMap' => [
-                        'twentyfifteen' => 'twentyfifteen.php',
-                    ],
+                    'basePath' => '@hiqdev/themes/hyde/messages',
                 ],
             ],
         ],
