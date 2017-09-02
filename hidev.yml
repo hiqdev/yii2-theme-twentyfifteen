@@ -4,9 +4,10 @@ package:
     title:          TwentyFifteen Theme for hiqdev/yii2-thememanager
     headline:       Yii2 TwentyFifteen Theme
     keywords:       twentyfifteen, theme, extension, yii2
-    namespace:      hiqdev\themes\twentyfifteen
     description:    |
-        This package provides [TwentyFifteen theme](https://wordpress.org/themes/twentyfifteen/)
-        for [Yii2 framework](http://yiiframework.com).
+        This package provides [TwentyFifteen theme] for [Yii2 framework].
 
-        EARLY DEVELOPMENT STAGE.
+        **EARLY DEVELOPMENT STAGE**
+
+        [TwentyFifteen theme]:  https://wordpress.org/themes/twentyfifteen/
+        [Yii2 framework]:       http://yiiframework.com/

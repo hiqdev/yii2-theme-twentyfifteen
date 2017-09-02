@@ -1,5 +1,4 @@
-Yii2 TwentyFifteen Theme
-========================
+# Yii2 TwentyFifteen Theme
 
 **TwentyFifteen Theme for hiqdev/yii2-thememanager**
 
@@ -10,8 +9,12 @@ Yii2 TwentyFifteen Theme
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/yii2-theme-twentyfifteen.svg)](https://scrutinizer-ci.com/g/hiqdev/yii2-theme-twentyfifteen/)
 [![Dependency Status](https://www.versioneye.com/php/hiqdev:yii2-theme-twentyfifteen/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:yii2-theme-twentyfifteen/dev-master)
 
-This package provides [TwentyFifteen theme](https://wordpress.org/themes/twentyfifteen/)
-for [Yii2 framework](http://yiiframework.com).
+This package provides [TwentyFifteen theme] for [Yii2 framework].
+
+**EARLY DEVELOPMENT STAGE**
+
+[TwentyFifteen theme]:  https://wordpress.org/themes/twentyfifteen/
+[Yii2 framework]:       http://yiiframework.com/
 
 ## Installation
 
@@ -36,4 +39,4 @@ to the require section of your composer.json.
 This project is released under the terms of the BSD-3-Clause [license](LICENSE).
 Read more [here](http://choosealicense.com/licenses/bsd-3-clause).
 
-Copyright © 2016, HiQDev (http://hiqdev.com/)
+Copyright © 2016-2017, HiQDev (http://hiqdev.com/)
